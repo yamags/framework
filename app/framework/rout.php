@@ -14,16 +14,16 @@ class Rout {
 						 $action = $request[2];
 						 
 				}
-				$model =  $controller;
+				//$model =  $controller;
 				$controller = 'Cntr_' . $controller;
-				$action =  $action;
-				$Modelfile = strtolower($model) . '.php';
+				//$action =  $action;
+				/*$Modelfile = strtolower($model) . '.php';
 				$ModelPath = "app/models/" . $Modelfile;
 				if (file_exists($ModelPath)) {
 						include $ModelPath;
 						
 						
-				}
+				}*/
 				$Controllerfile = strtolower($controller) . '.php';
 				$ControllerPath = "app/controllers/" . $Controllerfile;
 				if (file_exists($ControllerPath)) {
